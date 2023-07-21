@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_kit/hair_sallon/HSSplashScreen.dart';
+import 'introduction/intro_animation_screen.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -14,6 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Text('Flutter UI Kit'),
         ),
         body: Column(
@@ -21,9 +22,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(
+                Navigator.push(context, new MaterialPageRoute(
                   builder: (context) {
-                    return HSSplashScreen();
+                    return IntroAnimationScreen();
                   },
                 ));
               },
@@ -32,12 +33,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.all(15),
                 margin: EdgeInsets.all(30),
                 decoration: BoxDecoration(
-                  color: Colors.orangeAccent,
+                  color: Colors.redAccent.shade400,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Center(
                     child: Text(
-                  'Hair Saloon'.toUpperCase(),
+                  'Intro Animation'.toUpperCase(),
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
