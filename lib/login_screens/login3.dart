@@ -63,13 +63,13 @@ class _Login3State extends State<Login3> {
             ButtonWidget(
                 color: ColorUtil.blue,
                 shadow: ColorUtil.blue,
-                text: 'SignUp',
+                text: 'Login',
                 topPadding: 70),
             SizedBox(height: 10),
             ButtonWidget(
                 color: ColorUtil.blue,
                 shadow: ColorUtil.blue,
-                text: 'Login',
+                text: 'SignUp',
                 topPadding: 10)
           ],
         ),
