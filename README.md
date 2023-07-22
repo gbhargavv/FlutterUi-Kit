@@ -9,3 +9,9 @@ This is flutter ui template free for every one.
 
 ### Login screen
 <img src="https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/login1.png" align="left" width="20%"><img src="https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/login2.png" align="left" width="20%"><img src="https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/login3.png" align="left" width="20%">
+
+![Image](https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/intro_anim.gif)
+
+### Some Screenshots
+
+<img src="https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/login1.png" align="left" width="20%"><img src="https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/login2.png" align="left" width="20%"><img src="https://github.com/gbhargavv/FlutterUi-Kit/blob/master/images/login3.png" align="left" width="20%">
