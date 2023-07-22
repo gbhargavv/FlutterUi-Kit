@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_kit/login_screens/login_screens.dart';
+import 'package:flutter_ui_kit/utils/colors.dart';
 import 'introduction/intro_animation_screen.dart';
+import 'login_screens/login1.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -20,34 +23,43 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            GestureDetector(
-              onTap: () {
-                Navigator.push(context, new MaterialPageRoute(
-                  builder: (context) {
-                    return IntroAnimationScreen();
-                  },
-                ));
-              },
-              child: Container(
-                width: double.maxFinite,
-                padding: EdgeInsets.all(15),
-                margin: EdgeInsets.all(30),
-                decoration: BoxDecoration(
-                  color: Colors.redAccent.shade400,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Center(
-                    child: Text(
-                  'Intro Animation'.toUpperCase(),
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold),
-                )),
-              ),
-            )
+            button('Intro Animation', () {
+              Navigator.push(context, new MaterialPageRoute(
+                builder: (context) {
+                  return IntroAnimationScreen();
+                },
+              ));
+            }),
+            button('Login Screen', () {
+              Navigator.push(context, new MaterialPageRoute(
+                builder: (context) {
+                  return LoginScreen();
+                },
+              ));
+            }),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget button(String title, var onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.maxFinite,
+        padding: EdgeInsets.all(15),
+        margin: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        decoration: BoxDecoration(
+          color: ColorUtil.theme,
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Center(
+            child: Text(
+          title.toUpperCase(),
+          style: TextStyle(
+              color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
+        )),
       ),
     );
   }
